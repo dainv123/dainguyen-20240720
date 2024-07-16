@@ -1,0 +1,10 @@
+export const APP_TITLE: string = 'Cryptocurrency Chart';
+export const SEARCH_CRYPTOCURRENCY_LABEL: string = 'Search Cryptocurrency';
+export const PLEASE_SELECT_FIRST_LABEL: string = 'Please select a coin first';
+export const TIME_RANGE_LABEL: string = 'Time Range';
+export const MARKET_CAP_LABEL: string = 'Market Cap';
+export const FULLY_DILUTED_VALUATION_LABEL: string = 'Fully Diluted Valuation';
+export const TRADING_VOLUME_LABEL: string = '24-Hour Trading Volume';
+export const CIRCULATING_SUPPLY_LABEL: string = 'Circulating Supply';
+export const TOTAL_SUPPLY_LABEL: string = 'Total Supply';
+export const MAX_SUPPLY_LABEL: string = 'Max Supply';
