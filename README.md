@@ -10,7 +10,7 @@ The project consists of two main parts: a frontend application and a backend API
 
 ### Frontend (`crypto-price-frontend`)
 
-- `models/`: Contains data models used throughout the frontend for representing coins, prices, statistics, etc. These models define the structure of the data received from the backend API.
+- `models/`: Contains data models used throughout the frontend for representing coins, prices, statistics, etc.
   - `coin.tsx`, `price.tsx`, `statistics.tsx`
 - `public/`: Contains static assets used by the React application, such as images, fonts, and potentially an `index.html` file that serves as the entry point for the React application.
 - `components/`: Reusable UI components that build the application interface:
@@ -55,33 +55,34 @@ The project consists of two main parts: a frontend application and a backend API
    ```bash
    docker-compose up -d
    ```
-## Now, you can access the application at http://localhost:80.
+### Now, you can access the application at http://localhost:80.
+
 
 # Test Question No. 2
 The function `calculateMaxProfit` has been implemented in `crypto-price-frontend/src/utils/calculate-max-profit.tsx`. Unit tests validating its functionality are located in `crypto-price-frontend/src/test/calculate-max-profit.spec.tsx`. For detailed implementation and testing, please refer to these files.
 ```js
-    const calculateMaxProfit = (prices: number[]) => {
-        if (prices.length < 2) {
-            return 0;
-        }
-
-        let maxProfit = 0;
-        let minPrice = prices[0];
-
-        for (let index = 1; index < prices.length; index++) {
-            const price = prices[index];
-            
-            if (price < minPrice) {
-                minPrice = price;
-            }
-
-            const currentProfit = price - minPrice;
-
-            if (currentProfit > maxProfit) {
-                maxProfit = currentProfit;
-            }
-        }
-
-        return maxProfit;
+const calculateMaxProfit = (prices: number[]) => {
+    if (prices.length < 2) {
+        return 0;
     }
+
+    let maxProfit = 0;
+    let minPrice = prices[0];
+
+    for (let index = 1; index < prices.length; index++) {
+        const price = prices[index];
+        
+        if (price < minPrice) {
+            minPrice = price;
+        }
+
+        const currentProfit = price - minPrice;
+
+        if (currentProfit > maxProfit) {
+            maxProfit = currentProfit;
+        }
+    }
+
+    return maxProfit;
+}
 ```
