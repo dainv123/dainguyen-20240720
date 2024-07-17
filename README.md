@@ -56,6 +56,7 @@ The project consists of two main parts: a frontend application and a backend API
    docker-compose up --build
    ```
 ##### Now, you can access the application at `http://localhost:80`.
+Please note that some laptops may block localhost HTTPS connections due to security settings. It is recommended to navigate to the site using an `incognito window` for the best experience.
 
 
 ### Running the application locally
