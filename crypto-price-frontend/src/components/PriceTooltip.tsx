@@ -6,10 +6,11 @@ import { ValueType, NameType } from 'recharts/types/component/DefaultTooltipCont
 
 const PriceTooltip: React.FC<TooltipProps<ValueType, NameType>> = ({ active, payload }) => {
   if (active && payload?.length) {
+    const context = payload[0].payload;
     return (
       <div className="custom-tooltip" style={{ backgroundColor: '#fff', padding: '10px', border: '1px solid #ccc' }}>
-        <p className="label">{`${formatDateUTC(payload[0].payload.date as number)}`}</p>
-        <p className="intro">{`Price: ${formatCurrency(payload[0].payload.price as number)}`}</p>
+        <p className="label">{`${formatDateUTC(context.date as number)}`}</p>
+        <p className="intro">{`Price: ${formatCurrency(context.price as number)}`}</p>
       </div>
     );
   }

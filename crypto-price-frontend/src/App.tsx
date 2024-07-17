@@ -1,7 +1,7 @@
 import React from 'react';
-import Dashboard from './components/Dashboard';
-import { ThemeProvider } from '@emotion/react';
 import theme from './theme';
+import Dashboard from './pages/Dashboard';
+import { ThemeProvider } from '@emotion/react';
 
 const App: React.FC = () => <ThemeProvider theme={theme}><Dashboard /></ThemeProvider>;
 
