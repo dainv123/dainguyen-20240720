@@ -80,28 +80,31 @@ Once both servers are running, you can access the application at `http://localho
 ## Test Question No. 2
 The function `calculateMaxProfit` has been implemented in `crypto-price-frontend/src/utils/calculate-max-profit.tsx`. Unit tests validating its functionality are located in `crypto-price-frontend/src/test/calculate-max-profit.spec.tsx`. For detailed implementation and testing, please refer to these files.
 ```js
-    const calculateMaxProfit = (prices: number[]) => {
-        if (prices.length < 2) {
-            return 0;
-        }
-
-        let maxProfit = 0;
-        let minPrice = prices[0];
-
-        for (let index = 1; index < prices.length; index++) {
-            const price = prices[index];
-            
-            if (price < minPrice) {
-                minPrice = price;
-            }
-
-            const currentProfit = price - minPrice;
-
-            if (currentProfit > maxProfit) {
-                maxProfit = currentProfit;
-            }
-        }
-
-        return maxProfit;
+const calculateMaxProfit = (prices: number[]): number => {
+    if (prices.length < 2) {
+        return 0;
     }
+
+    let maxProfit: number = 0;
+
+    let minPrice: number = prices[0];
+
+    for (let index = 1; index < prices.length; index++) {
+        const price = prices[index];
+        
+        if (price < minPrice) {
+            minPrice = price;
+        }
+
+        const currentProfit = price - minPrice;
+
+        if (currentProfit > maxProfit) {
+            maxProfit = currentProfit;
+        }
+    }
+
+    return maxProfit;
+}
+
+export default calculateMaxProfit;
 ```

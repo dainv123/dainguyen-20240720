@@ -1,10 +1,11 @@
-const calculateMaxProfit = (prices: number[]) => {
+const calculateMaxProfit = (prices: number[]): number => {
     if (prices.length < 2) {
         return 0;
     }
 
-    let maxProfit = 0;
-    let minPrice = prices[0];
+    let maxProfit: number = 0;
+
+    let minPrice: number = prices[0];
 
     for (let index = 1; index < prices.length; index++) {
         const price = prices[index];
