@@ -68,6 +68,7 @@ The frontend follows a design pattern that separates presentational and containe
    docker-compose up --build
    ```
 ##### Now, you can access the application at `http://localhost:80`.
+![export](https://i.imgur.com/m2g9iDD.jpeg)
 
 ### Running the application locally
 Each project contains a README file with detailed instructions. Generally, you can follow these steps to run the application:
@@ -87,6 +88,7 @@ Each project contains a README file with detailed instructions. Generally, you c
 Once both servers are running, you can access the application at `http://localhost:3000/`.
 
 *Please note that some laptops may block localhost HTTPS connections due to security settings. It is recommended to navigate to the site using an `incognito window` for the best experience.*
+
 
 ## Test Question No. 2
 The function `calculateMaxProfit` has been implemented in `crypto-price-frontend/src/utils/calculate-max-profit.tsx`. 
