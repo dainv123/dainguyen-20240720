@@ -1,4 +1,4 @@
-## Test Question No. 1
+## No. 1
 
 ### Introduction
 
@@ -90,7 +90,7 @@ Once both servers are running, you can access the application at `http://localho
 *Please note that some laptops may block localhost HTTPS connections due to security settings. It is recommended to navigate to the site using an `incognito window` for the best experience.*
 
 
-## Test Question No. 2
+## No. 2
 The function `calculateMaxProfit` has been implemented in `crypto-price-frontend/src/utils/calculate-max-profit.tsx`. 
 Unit tests validating its functionality are located in `crypto-price-frontend/src/test/calculate-max-profit.spec.tsx`. For detailed implementation and testing, please refer to these files.
 ```js
